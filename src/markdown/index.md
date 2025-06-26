@@ -9,7 +9,7 @@ I currently work as an advisor and consultant in the blockchain space, collabora
 
 Previously, I was part of the [Web3 Foundation](https://web3.foundation/) team, where I managed the grants program. The foundation lead the stewardship of the [Polkadot Network](https://polkadot.com/), a next-generation blockchain platform.
 
-I'm deeply passionate about exploring cutting-edge technologies, particularly [blockchain](./blockchain/index.html) and [AI](./AI/index.html), and continuously seek opportunities to engage with innovative projects at the forefront of these fields.
+I'm deeply passionate about exploring cutting-edge technologies, particularly [blockchain](./blockchain/) and [AI](./AI/), and continuously seek opportunities to engage with innovative projects at the forefront of these fields.
 
 
 ## Professional Background
