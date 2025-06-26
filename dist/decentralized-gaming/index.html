@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ed Thomson's insights into decentralized gaming, blockchain gaming, on-chain games">
+  <title>Decentralized Gaming | Ed Thomson</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Modern CSS reset and custom styles -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/syntax-highlighting.css">
+  
+  <!-- Dark mode toggle -->
+  <script src="/js/dark-mode.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="/" class="site-title">Ed Thomson</a>
+          <p class="site-description">Blockchain | Gaming | Security</p>
+        </div>
+        <nav class="main-nav">
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="/">About</a></li>
+            <li><a href="/blockchain">Blockchain</a></li>
+            <li><a href="/AI">AI</a></li>
+            <li><a href="/decentralized-gaming">Decentralized Gaming</a></li>
+            <li><a href="/information-security">Information Security</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <section class="page-header">
+  <div class="container">
+    <h1 class="page-title">Decentralized Gaming</h1>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="container">
+    <article class="content-wrapper">
+      <div class="toc-container" id="toc-container"></div>
+      <div class="markdown-content">
+        <h2 id="blockchain-gaming">Blockchain gaming</h2>
+<p>As mentioned on the home page, I’ve been doing a lot of research around blockchain gaming. People use the terminology in different ways, so ironically there isn&#39;t a strong consensus on what a blockchain game is. Provided there is a blockchain somewhere in the stack then people use the phrase &quot;blockchain gaming&quot;.</p>
+<p>In my first blog I argued in favor of putting the <a href="https://medium.com/@edward.thomson/blockchain-gaming-putting-the-state-on-chain-cc3915090547">game state on-chain</a>. However, my thinking recently is to perhaps keep a record on-chain of game actions (not quite game state) and then to compute state and game logic off-chain. Trying to do game logic on-chain is sub-optimal for complex games, but can work for something simple. Decentralization can still be maintained.</p>
+<p>It is interesting to note that most blockchain games that we see advertised today are mostly centralized games with NFTs for item ownership. While this is somewhat interesting, it isn’t really my focus or what holds my interest.</p>
+<p>NFTs have become overhyped relative to the value of the technology, ditto for the phrase metaverse. While not inherently bad terms, they are being abused for marketing purposes.</p>
+<h2 id="what-is-decentralized-gaming">What is Decentralized Gaming?</h2>
+<p>What I really want to solve is decentralization for gaming, but what exactly do I mean by ‘decentralized gaming’?</p>
+<p>I suggest a first understanding can come from combining the definitions of “decentralized” and “game“. If we merge them together we can derive a potential definition of a decentralized game:</p>
+<blockquote>
+<p>Any game that features distributed planning and authority, and is designed to resist single points of failure could be described as “decentralized”. For me, I use the phrase “decentralized game” to refer almost exclusively to games that require a computer or similar electronic device.</p>
+</blockquote>
+<ul>
+<li>See the corresponding Wikipedia pages on <a href="https://en.wikipedia.org/wiki/Decentralization">Decentralization</a> and <a href="https://en.wikipedia.org/wiki/Video_game">Video games</a>.</li>
+</ul>
+<p>The definitions do not necessitate the use of a blockchain; however, given that blockchains are a solution for providing trust in a public adversarial network then it is an obvious technology to use for decentralized games which are necessarily online and public (think MMOs). However, as noted above, the use of a blockchain within a software stack does not guarantee decentralization. A centralized game with NFTs glued on to the side doesn’t decentralize much.</p>
+<p>I think decentralized games really need:</p>
+<ul>
+<li>Open Source Code (with appropriate license)</li>
+<li>Decentralized Blockchain Network</li>
+<li>Distributed verification of player actions.</li>
+</ul>
+<h2 id="real-time-decentralized-gaming">Real-Time Decentralized Gaming</h2>
+<p>Decentralized gaming represents a revolutionary shift in how games are developed and played. Unlike traditional gaming models that rely on centralized servers, decentralized games operate on blockchain networks, providing enhanced transparency, ownership, and fairness. However, achieving real-time, synchronous gameplay in a decentralized environment poses unique challenges.</p>
+<p>Why is real-time gameplay so captivating? From fast-paced shooters to competitive strategy games, the immediacy of interactions is what keeps players engaged. Yet, the decentralized model, with its inherent reliance on consensus and distributed networks, struggles to match the speed and fluidity players expect from real-time experiences.</p>
+<p>Read more on my Medium blog: <a href="https://edward-thomson.medium.com/the-future-of-real-time-decentralized-gaming-528a248f766a">The Future of Real-Time Decentralized Gaming</a>.</p>
+<h2 id="enhancing-fog-of-war-in-multiplayer-games-with-cryptography">Enhancing Fog of War in Multiplayer Games with Cryptography</h2>
+<p>In June 2020 I published a blog with the title &quot;<a href="https://edward-thomson.medium.com/preventing-cheaters-in-fog-of-war-games-69f202fbe107">Preventing cheaters in Fog Of War Games</a>&quot;. In that blog I explore an interesting cryptographic protocol which would make cheating in Real-Time Strategy games near impossible. The technique was created by researchers back in the early 2010s, however it was missing one final piece. I haven&#39;t yet developed that final piece, but I did make progress in replicating their cryptographic protocol.</p>
+<p>Using Oblivious Function Evaluation (OFE) we can compute a Private Set Intersection (PSI), such that players can detect each other within the game without revealing their exact positions, maintaining the integrity of the Fog of War. This ensures that no player can gain an unfair advantage by peeking into memory.</p>
+<p>My demo, built in JavaScript, is a bit slow despite some nice optimizations such as multi-level grids, web workers, Blake3, and ChaCha20. The next stage would be to consider Wasm or otherwise building a desktop app.</p>
+<p>See the live demo here: <a href="https://psi-demo-delta.vercel.app/">Private Set Intersection Demo</a>. The code is on <a href="https://github.com/EdwardAThomson/psi-demo">GitHub too</a>.</p>
+<h2 id="selection-of-blogs">Selection of Blogs</h2>
+<p>While my first piece mulled over the possibility of putting state fully on-chain, in later pieces I discuss how to verify the actions of players. I also consider how we can fund and govern such a game too, which is tricky if such games will be open source by default.</p>
+<p>If that doesn’t sound crazy enough, I postulated that we could turn <a href="https://medium.com/@edward.thomson/in-game-and-on-chain-guilds-can-become-companies-4f10d7906b2e">gaming guilds into securitized DAOs</a>. I naively suggested they can be companies, but a friend suggested that they should potentially be either mutuals, partnerships, or actual guilds.</p>
+<ul>
+<li><a href="https://edward-thomson.medium.com/building-private-loot-systems-with-fair-and-verifiable-randomness-using-vrfs-746039dc0aa4">Building Private Loot Systems with Fair and Verifiable Randomness Using VRFs</a> (Sep 2024)</li>
+<li><a href="https://medium.com/@edward-thomson/what-defines-a-web-3-game-and-is-there-a-better-term-c94954db2df4">What Defines a “Web 3 Game,” and Is There a Better Term?</a> (May 2024)</li>
+<li><a href="https://medium.com/@edward-thomson/playing-for-keeps-how-blockchain-transforms-in-app-purchases-to-ownership-727933b08dba">Playing for Keeps: How Blockchain Transforms In-App Purchases to Ownership</a> (Oct 2023)</li>
+<li><a href="https://edward-thomson.medium.com/emergent-currencies-in-the-gaming-metaverse-unleashing-the-power-of-player-created-money-7b36b449503c">Emergent Currencies in the Gaming Metaverse: Unleashing the Power of Player-Created Money</a>  (Apr 2023)</li>
+<li><a href="https://edward-thomson.medium.com/multiple-currencies-for-online-games-77d56e2d39b3">Multiple currencies for online games</a> (Jan 2023)</li>
+<li><a href="https://edward-thomson.medium.com/preventing-cheaters-in-fog-of-war-games-69f202fbe107">Preventing cheaters in Fog Of War Games</a> (Jun 2020)</li>
+<li><a href="https://edward-thomson.medium.com/the-thick-and-thin-of-blockhain-gaming-architectures-a51795156420">The thick and thin of blockchain gaming architectures</a> (Dec 2019)</li>
+<li><a href="https://edward-thomson.medium.com/fork-off-preserving-gaming-communities-with-blockchain-technology-4d90c04d0b8e">Fork off! Preserving gaming communities with blockchain technology</a> (Dec 2019)</li>
+<li><a href="https://edward-thomson.medium.com/trusted-trade-offs-in-blockchain-gaming-416faa5b8df8">Trusted trade-offs in blockchain gaming</a> (Dec 2019)</li>
+<li><a href="https://edward-thomson.medium.com/in-game-and-on-chain-guilds-can-become-companies-4f10d7906b2e">In game and on-chain: guilds can become companies</a> (May 2019)</li>
+<li><a href="https://medium.com/@edward-thomson/true-ownership-needs-provable-on-chain-assets-cf347ff0f384">True ownership needs provable on-chain assets</a> (Mar 2019)</li>
+<li><a href="https://edward-thomson.medium.com/the-worlds-of-web-3-games-7e4797126a94">The worlds of Web 3 Games</a>  (Jan 2019)</li>
+<li><a href="https://edward-thomson.medium.com/governance-of-and-incentives-for-a-web-3-game-56edefb89cd4">Governance of and incentives for a Web 3 game</a>  (Jan 2019)</li>
+<li><a href="https://edward-thomson.medium.com/blockchain-gaming-putting-the-state-on-chain-cc3915090547">Blockchain gaming: putting the state on-chain</a> (Jan 2019)</li>
+</ul>
+<h2 id="youtube">YouTube</h2>
+<p><a href="https://www.youtube.com/playlist?list=PLQNfGR2MwnqmPhdYx1HfzZ6IR6Z2xAWL2">Decentralized Gaming Explained</a> – Videos by the Decentralized Gaming Association
+<a href="https://www.youtube.com/watch?v=sPgZoGGxBAc">Overview of decentralized games</a> – hosted by the Blockchain Game Alliance.</p>
+<h2 id="podcast-appearances">Podcast Appearances</h2>
+<p><a href="https://twitter.com/AndrewSteinwold/status/1273641903230255105">Andrew Steinwold</a> interviewed me for his <a href="https://anchor.fm/andrew-steinwold/episodes/Edward-Thomson---PhD-In-Astrophysics-Turned-Decentralization-Diehard---ep-25-efg2vs">Zima Red Podcast</a>.</p>
+<h2 id="decentralized-gaming-association">Decentralized Gaming Association</h2>
+<p>I helped to co-found the <a href="https://decentralizedgaming.io/about">DGA back in November 2019</a>, the group came together when the founding members met online to discuss what should be done to further promote fully decentralized games. The technology is poorly understood and the games virtually unknown, yet we have the belief that the technology will bring great benefits that outweigh the problems.</p>
+
+      </div>
+    </article>
+  </div>
+</section> 
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>&copy; <span id="current-year"></span> Ed Thomson. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/EdwardAThomson" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/edward-thomson-080ba519/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="/js/main.js"></script>
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (menuToggle) {
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html> 
