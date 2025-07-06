@@ -61,7 +61,7 @@ Find on [LLM Creative Writing Tester GitHub](https://github.com/EdwardAThomson/L
 ### DungeonGPT
 [DungeonGPT](https://github.com/EdwardAThomson/DungeonGPT) is an interactive, AI-powered Dungeon Master tool designed to guide players through customized adventures in a tabletop role-playing game. The application features dynamic character creation, party selection, game settings customization, and conversational gameplay, all powered by GPT4o.
 
-The code is fully open sourced and on GitHub. The code is written in Python, although I also re-wrote this app in JS but I didn't publish that version yet.
+The code is fully open sourced and on GitHub. The code is written in Python, although I also wrote a version of the app in JS[DungeonGPT-JS](https://github.com/EdwardAThomson/DungeonGPT-JS). This latter version has a little bit more functionality as I added a simple map.
 
 
 ## What's Next?
