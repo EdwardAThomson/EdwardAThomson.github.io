@@ -17,19 +17,19 @@ In other words: Learning first, automation second = cognitive dividend.
 
 AI isn't brain rot; it's a mirror. If you skip the heavy lifting, it happily keeps the bar low. Sweat through the first reps yourself then let AI boost, not replace, your cognition.
 
-## My Guiding Principles
+## Guiding Principles
 My philosophy on using AI can be broken down into a few key principles:
 
 *   **1. Augment, Don't Replace:** AI should be a partner that handles the tedious work (like syntax and boilerplate), freeing up human cognition for higher-level creative and strategic thinking.
 *   **2. Critical Engagement is Non-Negotiable:** The value of AI is directly proportional to the critical thought you apply to its output. It's a tool for enhancement, not a replacement for thinking: if you skip the heavy lifting, it happily keeps the bar low.
 *   **3. Build in the Open:** The best way to understand and demystify AI is to build with it and share the results. This is why my projects are open source.
 
-## My Workflow
+## My meta Workflow for working with AI
 I use AI as an active pair programmer. My primary tool is **Cursor**, which allows me to have a tight feedback loop with an AI that has full context of my codebase.
 
-*   **I Delegate:** Repetitive tasks, writing boilerplate code, generating unit tests, and explaining unfamiliar libraries or codebases.
-*   **I Command:** High-level architecture, creative problem-solving, and the final decision on whether to accept, reject, or modify any code suggestion. Creating documents that contain project requirements, design thinking, etc are essential.
-*   **I Recognize its Limits:** AI is not a strategic thinker. It can't tell you *what* to build, but it's an unparalleled accelerator for *how* to build it once you have a clear vision.
+*   **Delegate:** Repetitive tasks, writing boilerplate code, generating unit tests, and explaining unfamiliar libraries or codebases.
+*   **Command:** High-level architecture, creative problem-solving, and the final decision on whether to accept, reject, or modify any code suggestion. Creating documents that contain project requirements, design thinking, etc are essential.
+*   **Recognize its Limits:** AI is not a strategic thinker. It can't tell you *what* to build, but it's an unparalleled accelerator for *how* to build it once you have a clear vision.
 
 
 ## My AI-powered projects
@@ -61,7 +61,27 @@ Find on [LLM Creative Writing Tester GitHub](https://github.com/EdwardAThomson/L
 ### DungeonGPT
 [DungeonGPT](https://github.com/EdwardAThomson/DungeonGPT) is an interactive, AI-powered Dungeon Master tool designed to guide players through customized adventures in a tabletop role-playing game. The application features dynamic character creation, party selection, game settings customization, and conversational gameplay, all powered by GPT4o.
 
-The code is fully open sourced and on GitHub. The code is written in Python, although I also wrote a version of the app in JS[DungeonGPT-JS](https://github.com/EdwardAThomson/DungeonGPT-JS). This latter version has a little bit more functionality as I added a simple map.
+The code is fully open sourced and on GitHub. The code is written in Python, although I also wrote a version of the app in JS: [DungeonGPT-JS](https://github.com/EdwardAThomson/DungeonGPT-JS). This latter version has a little bit more functionality as I added a simple map.
+
+
+### Prompt Injection
+I worked on a couple of research that explored prompt injection attacks on LLMs. I was primarily interested in how to use an LLM as a safey classifier for defending against prompt injection attacks. My first two ideas made performance; however, asking the LLM to be suspicious of prompts improved performance.
+
+**ScrambleGate**
+The intention was a stochastic pre-execution gate: before a prompt is sent to the main model, ScrambleGate randomly samples and scrambles parts of the input, then sends them to an LLM for safety classification.
+[ScrambleGate on GitHub](https://github.com/EdwardAThomson/Scramble-Gate).
+
+The idea was inspired by ASLR (Address Space Layout Randomization) in computer security: scrambling the input before "execution".
+
+However, this was not a successful attempt at defending against prompt injection attacks. The detection rate decreases upon being scrambled. Note that the system prompt in this code did not ask the LLM to be suspicious.
+
+**Prompt Expansion**
+A simple tool that analyzes how prompt expansion and adversarial system prompts affect safety classification by LLMs. The initial idea was to make prompts more verbose and see if this helped an LLM spot malicious intent; however, this made performance worse.
+
+**Adversarial System Prompts**
+That lead me to try asking the LLM to be more suspicious: this involved adding a system prompt to the LLM that instructed it to be more suspicious and alert to potential abuse.
+
+[Code on GitHub](https://github.com/EdwardAThomson/prompt-injection-testing)
 
 
 ## What's Next?

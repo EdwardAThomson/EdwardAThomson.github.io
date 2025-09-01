@@ -11,6 +11,7 @@ Previously, I was part of the [Web3 Foundation](https://web3.foundation/) team, 
 
 I'm deeply passionate about exploring cutting-edge technologies, particularly [blockchain](./blockchain/) and [AI](./AI/), and continuously seek opportunities to engage with innovative projects at the forefront of these fields.
 
+I maintain a personal blog that contains my long-form writing on a range of topics since 2009, you can find it here: [esoteriic.com](https://esoteriic.com/).
 
 ## Professional Background
 

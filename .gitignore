@@ -3,6 +3,8 @@
 
 # Build output
 /dist
+temp
+
 
 # Logs
 logs
