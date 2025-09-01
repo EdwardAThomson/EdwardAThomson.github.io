@@ -66,7 +66,7 @@ Find on [LLM Creative Writing Tester GitHub](https://github.com/EdwardAThomson/L
 The code is fully open sourced and on GitHub. The code is written in Python, although I also wrote a version of the app in JS: [DungeonGPT-JS](https://github.com/EdwardAThomson/DungeonGPT-JS). This latter version has a little bit more functionality as I added a simple map.
 
 
-### Prompt Injection
+### Prompt Injection Research
 I worked on a couple of research that explored prompt injection attacks on LLMs. I was primarily interested in how to use an LLM as a safey classifier for defending against prompt injection attacks. My first two ideas made performance; however, asking the LLM to be suspicious of prompts improved performance.
 
 **ScrambleGate**
@@ -75,7 +75,7 @@ The intention was a stochastic pre-execution gate: before a prompt is sent to th
 
 The idea was inspired by ASLR (Address Space Layout Randomization) in computer security: scrambling the input before "execution".
 
-However, this was not a successful attempt at defending against prompt injection attacks. The detection rate decreases upon being scrambled. Note that the system prompt in this code did not ask the LLM to be suspicious.
+However, this was not a successful idea for defending against prompt injection attacks. The detection rate decreases upon being scrambled. Note that the system prompt in this code did not ask the LLM to be suspicious.
 
 **Prompt Expansion**
 A simple tool that analyzes how prompt expansion and adversarial system prompts affect safety classification by LLMs. The initial idea was to make prompts more verbose and see if this helped an LLM spot malicious intent; however, this made performance worse.
