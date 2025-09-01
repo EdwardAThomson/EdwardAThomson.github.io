@@ -24,8 +24,10 @@ My philosophy on using AI can be broken down into a few key principles:
 *   **2. Critical Engagement is Non-Negotiable:** The value of AI is directly proportional to the critical thought you apply to its output. It's a tool for enhancement, not a replacement for thinking: if you skip the heavy lifting, it happily keeps the bar low.
 *   **3. Build in the Open:** The best way to understand and demystify AI is to build with it and share the results. This is why my projects are open source.
 
-## My meta Workflow for working with AI
-I use AI as an active pair programmer. My primary tool is **Cursor**, which allows me to have a tight feedback loop with an AI that has full context of my codebase.
+## My meta workflow for working with AI
+I use AI as an active pair programmer. My primary tool is **Windsurf** (previously Cursor), which allows me to have a tight feedback loop with an AI that has full context of my codebase. Creating documents for these tools to follow is essential, e.g. create specification and implementation documents when starting or upgrading a project.
+
+Here are the meta roles I use when working with AI:
 
 *   **Delegate:** Repetitive tasks, writing boilerplate code, generating unit tests, and explaining unfamiliar libraries or codebases.
 *   **Command:** High-level architecture, creative problem-solving, and the final decision on whether to accept, reject, or modify any code suggestion. Creating documents that contain project requirements, design thinking, etc are essential.
