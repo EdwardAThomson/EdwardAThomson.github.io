@@ -1,0 +1,87 @@
+[
+  {
+    "title": "DungeonGPT.js",
+    "description": "An AI-powered dungeon master for tabletop RPG adventures. Uses GPT to generate dynamic storylines, NPCs, and encounters in real-time.",
+    "image": "dungeongpt_js.png",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/DungeonGPT-JS",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "Fantasy Card Game",
+    "description": "A digital collectible card game with fantasy themes. Features deck building, strategic gameplay, and beautiful card artwork.",
+    "image": "fantasy_card_game.png",
+    "links": [
+      {
+        "type": "web",
+        "url": "https://fantasy-card-game.vercel.app/",
+        "label": "Demo"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/fantasy-card-game",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "NovelWriter",
+    "description": "A distraction-free writing application designed for novelists and long-form content creators. Features chapter organization, word count tracking, and export options.",
+    "image": "novelwriter.png",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/NovelWriter",
+        "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7moN7PCRUpk&list=PLBdJfwgEOXYtyP1dgBHzR2MEBTNNzmPoZ&index=1",
+        "label": "YouTube"
+      }
+    ]
+  },
+  {
+    "title": "PSI Demo",
+    "description": "A demonstration of Private Set Intersection (PSI) cryptographic protocols. Allows two parties to compute the intersection of their datasets without revealing the full datasets.",
+    "image": "PSI_demo.png",
+    "links": [
+      {
+        "type": "web",
+        "url": "https://psi-demo-delta.vercel.app/",
+        "label": "Demo"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/psi-demo",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "Roguelike Dungeon Crawler",
+    "description": "A classic roguelike dungeon crawler with procedurally generated levels, turn-based combat, and permadeath. Built with modern web technologies.",
+    "image": "roguelike.png",
+    "links": [
+      {
+        "type": "web",
+        "url": "https://roguelike-seven.vercel.app/",
+        "label": "Demo"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/Roguelike",
+        "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=y9RRpOgV9yg",
+        "label": "YouTube"
+      }
+    ]
+  }
+]
