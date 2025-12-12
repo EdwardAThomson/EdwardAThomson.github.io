@@ -8,6 +8,11 @@
         "type": "github",
         "url": "https://github.com/EdwardAThomson/DungeonGPT-JS",
         "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=CGskdUTQnMo",
+        "label": "YouTube"
       }
     ]
   },
@@ -59,6 +64,11 @@
         "type": "github",
         "url": "https://github.com/EdwardAThomson/fantasy-card-game",
         "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=SeWWdGR7oGo",
+        "label": "YouTube"
       }
     ]
   },
