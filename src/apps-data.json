@@ -12,6 +12,40 @@
     ]
   },
   {
+    "title": "NovelWriter",
+    "description": "A distraction-free writing application designed for novelists and long-form content creators. Features chapter organization, word count tracking, and export options.",
+    "image": "novelwriter.png",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/NovelWriter",
+        "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7moN7PCRUpk&list=PLBdJfwgEOXYtyP1dgBHzR2MEBTNNzmPoZ&index=1",
+        "label": "YouTube"
+      }
+    ]
+  },
+  {
+    "title": "Nebula Rush (Sci-Fi Game)",
+    "description": "A high-speed sci-fi racing game built with React, Three.js, and Tailwind CSS. Inspired by F-Zero.",
+    "image": "nebula_rush.png",
+    "links": [
+      {
+        "type": "web",
+        "url": "https://nebula-rush-omega.vercel.app/",
+        "label": "Demo"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/Nebula-Rush",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
     "title": "Fantasy Card Game",
     "description": "A digital collectible card game with fantasy themes. Features deck building, strategic gameplay, and beautiful card artwork.",
     "image": "fantasy_card_game.png",
@@ -29,18 +63,18 @@
     ]
   },
   {
-    "title": "NovelWriter",
-    "description": "A distraction-free writing application designed for novelists and long-form content creators. Features chapter organization, word count tracking, and export options.",
-    "image": "novelwriter.png",
+    "title": "StoryDaemon",
+    "description": "StoryDaemon generates long-form fiction through an autonomous agent that plans, writes, and evolves stories organically.",
+    "image": "storydaemon.png",
     "links": [
       {
         "type": "github",
-        "url": "https://github.com/EdwardAThomson/NovelWriter",
+        "url": "https://github.com/EdwardAThomson/StoryDaemon",
         "label": "GitHub"
       },
       {
         "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=7moN7PCRUpk&list=PLBdJfwgEOXYtyP1dgBHzR2MEBTNNzmPoZ&index=1",
+        "url": "https://www.youtube.com/watch?v=vIBRLavyxbs",
         "label": "YouTube"
       }
     ]

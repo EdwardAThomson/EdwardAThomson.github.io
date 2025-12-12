@@ -21,8 +21,8 @@ A modern, fast-loading personal website built with markdown and static HTML gene
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/EdwardAThomson/edthomson-website.git
-   cd edthomson-website
+   git clone https://github.com/EdwardAThomson/EdwardAThomson.github.io.git
+   cd EdwardAThomson.github.io
    ```
 
 2. Install dependencies:
