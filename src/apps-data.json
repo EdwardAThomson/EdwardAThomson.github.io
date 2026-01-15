@@ -18,6 +18,24 @@
     ]
   },
   {
+    "title": "RPG Loom",
+    "description": "A deterministic incremental RPG with AI-powered dynamic content generation. Features quest systems, crafting, combat, and multi-provider LLM support for narrative generation.",
+    "image": "rpg_loom.png",
+    "category": "Games",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/RPG-Loom",
+        "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=In-FWxJHEmI",
+        "label": "YouTube"
+      }
+    ]
+  },
+  {
     "title": "NovelWriter",
     "description": "A distraction-free writing application designed for novelists and long-form content creators. Features chapter organization, word count tracking, and export options.",
     "image": "novelwriter.png",
@@ -50,6 +68,11 @@
         "type": "github",
         "url": "https://github.com/EdwardAThomson/Nebula-Rush",
         "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=zMhtxbewmd0",
+        "label": "YouTube"
       }
     ]
   },
