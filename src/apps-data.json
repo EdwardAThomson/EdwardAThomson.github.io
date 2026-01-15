@@ -3,6 +3,7 @@
     "title": "DungeonGPT.js",
     "description": "An AI-powered dungeon master for tabletop RPG adventures. Uses GPT to generate dynamic storylines, NPCs, and encounters in real-time.",
     "image": "dungeongpt_js.png",
+    "category": "Games",
     "links": [
       {
         "type": "github",
@@ -20,6 +21,7 @@
     "title": "NovelWriter",
     "description": "A distraction-free writing application designed for novelists and long-form content creators. Features chapter organization, word count tracking, and export options.",
     "image": "novelwriter.png",
+    "category": "Writing Tools",
     "links": [
       {
         "type": "github",
@@ -37,6 +39,7 @@
     "title": "Nebula Rush (Sci-Fi Game)",
     "description": "A high-speed sci-fi racing game built with React, Three.js, and Tailwind CSS. Inspired by F-Zero.",
     "image": "nebula_rush.png",
+    "category": "Games",
     "links": [
       {
         "type": "web",
@@ -54,6 +57,7 @@
     "title": "Fantasy Card Game",
     "description": "A digital collectible card game with fantasy themes. Features deck building, strategic gameplay, and beautiful card artwork.",
     "image": "fantasy_card_game.png",
+    "category": "Games",
     "links": [
       {
         "type": "web",
@@ -76,6 +80,7 @@
     "title": "StoryDaemon",
     "description": "StoryDaemon generates long-form fiction through an autonomous agent that plans, writes, and evolves stories organically.",
     "image": "storydaemon.png",
+    "category": "Writing Tools",
     "links": [
       {
         "type": "github",
@@ -93,6 +98,7 @@
     "title": "PSI Demo",
     "description": "A demonstration of Private Set Intersection (PSI) cryptographic protocols. Allows two parties to compute the intersection of their datasets without revealing the full datasets.",
     "image": "PSI_demo.png",
+    "category": "Tech Demos",
     "links": [
       {
         "type": "web",
@@ -110,6 +116,7 @@
     "title": "Roguelike Dungeon Crawler",
     "description": "A classic roguelike dungeon crawler with procedurally generated levels, turn-based combat, and permadeath. Built with modern web technologies.",
     "image": "roguelike.png",
+    "category": "Games",
     "links": [
       {
         "type": "web",
