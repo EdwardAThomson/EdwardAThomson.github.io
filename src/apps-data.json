@@ -157,5 +157,44 @@
         "label": "YouTube"
       }
     ]
+  },
+  {
+    "title": "VRF Loot Generator",
+    "description": "A demonstration of Verifiable Random Functions (VRFs) for cryptographically secure loot generation. Features an online trading system with commit-reveal protocol to prevent tampering.",
+    "image": "vrf_loot_generator.png",
+    "category": "Tech Demos",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/vrf-loot-generator",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "LiveSlides",
+    "description": "An AI-native presentation tool for creating media-rich slides. Write presentations in MDX with React components, featuring 10 smooth transitions, presenter view, and camera overlay support.",
+    "image": "liveslides.png",
+    "category": "Productivity Tools",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/LiveSlides",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "NoBS Recorder",
+    "description": "A minimal, reliable desktop screen recorder for Linux (X11). Features window/screen capture, microphone support with volume boost, webcam overlay, and auto-save functionality.",
+    "image": "nobs_recorder.png",
+    "category": "Productivity Tools",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/NoBS-Recorder",
+        "label": "GitHub"
+      }
+    ]
   }
 ]
