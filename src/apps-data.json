@@ -6,6 +6,11 @@
     "category": "Games",
     "links": [
       {
+        "type": "web",
+        "url": "https://dungeongpt.xyz/",
+        "label": "Website"
+      },
+      {
         "type": "github",
         "url": "https://github.com/EdwardAThomson/DungeonGPT-JS",
         "label": "GitHub"
