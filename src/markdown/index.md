@@ -33,6 +33,6 @@ I'm particularly interested in AI plus the intersections of blockchain, gaming, 
 Feel free to reach out if you'd like to discuss any of these topics or potential collaborations!
 
 ## Contact
-Best way to contact me is via [LinkedIn](https://www.linkedin.com/in/edward-thomson-080ba519/), although email can also work:
+Best way to contact me is via [LinkedIn](https://www.linkedin.com/in/edward-thomson-phd-msc-080ba519/), although email can also work:
 
 hello@. edthomson .com
