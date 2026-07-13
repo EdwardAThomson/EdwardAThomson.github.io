@@ -12,7 +12,7 @@ markdown into HTML and deploys to GitHub Pages.
 - [x] Responsive layout with mobile navigation menu
 - [x] Dark mode (system-preference detection + manual toggle, persisted)
 - [x] Content pages — About, Apps & Projects, Blockchain, AI, Decentralized Gaming, Information Security
-- [x] Apps showcase grid from `apps-data.json`, categorized (Games, Writing Tools, Tech Demos, Productivity)
+- [x] Apps showcase grid from `apps-data.json`, categorized (Games, Writing Tools, Tech Demos, Productivity Tools)
 - [x] Code syntax highlighting (highlight.js) with copy-to-clipboard buttons
 - [x] Auto table of contents from headings with smooth-scroll navigation
 - [x] Lazy image loading (IntersectionObserver with fallback)
