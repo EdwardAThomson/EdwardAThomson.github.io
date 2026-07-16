@@ -1,6 +1,6 @@
 ---
 title: About
-description: Ed Thomson - Blockchain, Gaming, and Information Security Expert
+description: Ed Thomson - AI, Blockchain, Gaming, and Information Security
 ---
 
 ![Profile Picture](../images/edthomson_linkedin.jpg)
