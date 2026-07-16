@@ -5,7 +5,7 @@ description: Ed Thomson - Blockchain, Gaming, and Information Security Expert
 
 ![Profile Picture](../images/edthomson_linkedin.jpg)
 
-I currently work as an advisor and consultant in the blockchain space, collaborating with innovative teams and investors focused on gaming, NFTs, and to an extent the Polkadot ecosystem. This work runs through my two companies: [Octonion Technologies](https://octonion.tech), my consultancy and advisory practice (increasingly focused on helping organisations with AI adoption, automation, and AI governance), and [Octonion Software](https://octonion.io), through which I build software and products. My views are fairly chain agnostic and so when I consult with teams I'm picking the right technology that works for the them. Not all blockchains are equal, so it is worth aiming for the right solution for a given problem.
+I work as an advisor and consultant, helping organisations adopt AI thoughtfully. This runs through my two companies: [Octonion Technologies](https://octonion.tech), my consultancy and advisory practice focused on AI adoption, automation, and AI governance, and [Octonion Software](https://octonion.io), through which I build software and products. A lot of that work is about automation: finding where AI can take repetitive, manual tasks off people's hands, then putting the right guardrails around it so it stays reliable and well governed. I also continue to advise teams and investors across blockchain and gaming, staying fairly chain agnostic and picking the right technology for the problem at hand rather than assuming all blockchains are equal.
 
 Previously, I was part of the [Web3 Foundation](https://web3.foundation/) team, where I managed the grants program. The foundation lead the stewardship of the [Polkadot Network](https://polkadot.com/), a next-generation blockchain platform.
 
@@ -28,7 +28,7 @@ I maintain a personal blog that contains my long-form writing on a range of topi
 
 ## Future Directions
 
-I'm particularly interested in AI plus the intersections of blockchain, gaming, and security. The potential for decentralized gaming platforms that prioritizes player ownership and security is immense.
+I'm most focused on how AI can make organisations more capable: sensible adoption, practical automation, and the governance that keeps it trustworthy. I stay just as interested in the intersections of blockchain, gaming, and security, and in decentralized platforms that give players real ownership.
 
 Feel free to reach out if you'd like to discuss any of these topics or potential collaborations!
 
