@@ -8,7 +8,7 @@
       {
         "type": "web",
         "url": "https://dungeongpt.xyz/",
-        "label": "Website"
+        "label": "Play"
       },
       {
         "type": "github",
@@ -28,6 +28,11 @@
     "image": "rpg_loom.png",
     "category": "Games",
     "links": [
+      {
+        "type": "web",
+        "url": "https://rpg-loom.octonion.io/",
+        "label": "Play"
+      },
       {
         "type": "github",
         "url": "https://github.com/EdwardAThomson/RPG-Loom",
@@ -67,7 +72,7 @@
       {
         "type": "web",
         "url": "https://nebula-rush-omega.vercel.app/",
-        "label": "Demo"
+        "label": "Play"
       },
       {
         "type": "github",
@@ -90,7 +95,7 @@
       {
         "type": "web",
         "url": "https://fantasy-card-game.vercel.app/",
-        "label": "Demo"
+        "label": "Play"
       },
       {
         "type": "github",
@@ -149,7 +154,7 @@
       {
         "type": "web",
         "url": "https://roguelike-seven.vercel.app/",
-        "label": "Demo"
+        "label": "Play"
       },
       {
         "type": "github",

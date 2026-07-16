@@ -500,6 +500,29 @@ blockquote {
   color: var(--dark-color-text-light);
 }
 
+.footer-businesses {
+  display: flex;
+  gap: var(--spacing-4);
+  font-size: 0.875rem;
+}
+
+.footer-businesses a {
+  color: var(--color-text-light);
+  transition: color var(--transition-fast);
+}
+
+.dark-mode .footer-businesses a {
+  color: var(--dark-color-text-light);
+}
+
+.footer-businesses a:hover {
+  color: var(--color-primary);
+}
+
+.dark-mode .footer-businesses a:hover {
+  color: #60a5fa;
+}
+
 .footer-links {
   display: flex;
   gap: var(--spacing-4);

@@ -5,7 +5,7 @@ description: Ed Thomson - Blockchain, Gaming, and Information Security Expert
 
 ![Profile Picture](../images/edthomson_linkedin.jpg)
 
-I currently work as an advisor and consultant in the blockchain space, collaborating with innovative teams and investors focused on gaming, NFTs, and to an extent the Polkadot ecosystem. My views are fairly chain agnostic and so when I consult with teams I'm picking the right technology that works for the them. Not all blockchains are equal, so it is worth aiming for the right solution for a given problem.
+I currently work as an advisor and consultant in the blockchain space, collaborating with innovative teams and investors focused on gaming, NFTs, and to an extent the Polkadot ecosystem. This work runs through my two companies: [Octonion Technologies](https://octonion.tech), my consultancy and advisory practice (increasingly focused on helping organisations with AI adoption, automation, and AI governance), and [Octonion Software](https://octonion.io), through which I build software and products. My views are fairly chain agnostic and so when I consult with teams I'm picking the right technology that works for the them. Not all blockchains are equal, so it is worth aiming for the right solution for a given problem.
 
 Previously, I was part of the [Web3 Foundation](https://web3.foundation/) team, where I managed the grants program. The foundation lead the stewardship of the [Polkadot Network](https://polkadot.com/), a next-generation blockchain platform.
 
@@ -15,8 +15,8 @@ I maintain a personal blog that contains my long-form writing on a range of topi
 
 ## Professional Background
 
-*   **Blockchain Advisor & Consultant** (2020 - Present)
-    *   Advising teams and investors in blockchain and gaming.
+*   **Founder, [Octonion Technologies](https://octonion.tech) & [Octonion Software](https://octonion.io)** (2020 - Present)
+    *   Advising organisations on AI adoption, automation, and AI governance, alongside blockchain and gaming work, and building software and products.
 *   **Various Roles + Grants Manager, Web3 Foundation** (2018 - 2020)
     *   Established and managed the grants program to foster the growth of the Polkadot and Kusama ecosystems.
 *   **Security Consultant, Portcullis / Cisco** (2015 - 2018)
