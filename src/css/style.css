@@ -840,6 +840,11 @@ blockquote {
   margin: 0;
 }
 
+.app-image-placeholder {
+  font-size: 4rem;
+  line-height: 1;
+}
+
 .app-content {
   padding: var(--spacing-6);
   flex: 1;

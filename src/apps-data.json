@@ -142,6 +142,11 @@
         "type": "github",
         "url": "https://github.com/EdwardAThomson/psi-demo",
         "label": "GitHub"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/Private-Set-Intersection",
+        "label": "C++ Port"
       }
     ]
   },
@@ -203,6 +208,268 @@
       {
         "type": "github",
         "url": "https://github.com/EdwardAThomson/NoBS-Recorder",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "Voxelholm",
+    "category": "Games",
+    "description": "A from-scratch C++/OpenGL voxel engine and game. Mine, build and explore a procedurally generated world with biomes, caves, crafting, villages and a day/night cycle, heading towards a sandbox RPG. Work in progress.",
+    "links": []
+  },
+  {
+    "title": "Xaya Roguelike",
+    "image": "xaya_roguelike.jpg",
+    "category": "Games",
+    "description": "A blockchain roguelike on the Xaya framework. The overworld lives on-chain while dungeon runs play out locally and settle with replay proofs. Includes two-player co-op and staked duels.",
+    "links": [
+      {
+        "type": "web",
+        "url": "https://xayarogue.octonion.io/",
+        "label": "Play"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/xaya-roguelike-frontend",
+        "label": "Frontend"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/xaya-roguelike",
+        "label": "Backend"
+      }
+    ]
+  },
+  {
+    "title": "Spellbound Gridiron",
+    "image": "spellbound_gridiron.jpg",
+    "category": "Games",
+    "description": "A fantasy football strategy game inspired by Blood Bowl. One LLM invents team names and another powers an in-game coach for rules help and tactical advice.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/Spellbound-Gridiron",
+        "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=pgtWZjtKIuA",
+        "label": "YouTube"
+      }
+    ]
+  },
+  {
+    "title": "Castle Arcade",
+    "image": "castle_arcade.jpg",
+    "category": "Games",
+    "description": "A browser arcade for CastlePalm, a fantasy 16-bit handheld console. Pick a cartridge and play, or write your own in assembly with the CastlePalm SDK.",
+    "links": [
+      {
+        "type": "web",
+        "url": "https://castle-arcade.octonion.io/",
+        "label": "Play"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/castle-arcade",
+        "label": "GitHub"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/castlepalm-sdk",
+        "label": "SDK"
+      }
+    ]
+  },
+  {
+    "title": "Dragon Palm Arcade",
+    "image": "dragon_palm_arcade.jpg",
+    "category": "Games",
+    "description": "A browser arcade for the Dragon Palm fantasy 8-bit console. A fully static site with an emulator and a cartridge picker.",
+    "links": [
+      {
+        "type": "web",
+        "url": "https://dragon-palm-arcade.octonion.io/",
+        "label": "Play"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/dragon-palm-arcade",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "LLM Creative Writing Analyzer",
+    "image": "llm_creative_writing_analyzer.jpg",
+    "category": "Writing Tools",
+    "description": "Sends the same creative writing prompt to multiple LLMs, repeatedly, to compare their output and measure consistency and variation.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/LLM-Creative-Writing-Analyzer",
+        "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=d0gkrymMI_w",
+        "label": "YouTube"
+      }
+    ]
+  },
+  {
+    "title": "LLM Brain Demo",
+    "image": "llm_brain_demo.jpg",
+    "category": "Tech Demos",
+    "description": "A working proof that a company \"LLM brain\" is a router with governed tools, not a single vector database. One chat interface over a synthetic company, with text-to-SQL and hybrid document search, and permissions enforced by Postgres.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/llm-brain-demo",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "Prompt Injection Testing",
+    "category": "Tech Demos",
+    "description": "A research tool comparing prompt injection detectors side by side: LLM classifiers, regex patterns, BERT models, cheap LLM pre-filters and ScrambleGate.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/prompt-injection-testing",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "Rysk APR Monitor",
+    "image": "rysk_dashboard.jpg",
+    "category": "Tech Demos",
+    "description": "A real-time dashboard comparing Rysk's income premium APRs against theoretical Black-Scholes APRs to spot mispriced income.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/rysk-dashboard",
+        "label": "GitHub"
+      },
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/jA3Ut8ZXcSs",
+        "label": "YouTube"
+      }
+    ]
+  },
+  {
+    "title": "Crypto Trading Dashboard",
+    "image": "trade_dashboard.jpg",
+    "category": "Tech Demos",
+    "description": "A real-time crypto trading dashboard with a live order book heatmap, cumulative volume delta, price charts and open interest.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/trade_dashboard",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "PromptDesk",
+    "image": "promptdesk.jpg",
+    "category": "Productivity Tools",
+    "description": "A minimalist AI desktop that runs entirely in the browser. Notes, folders and chat windows connected to OpenAI, Claude or Gemini, all saved locally.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/PromptDesk",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "Clipsmith",
+    "category": "Productivity Tools",
+    "description": "A lightweight Linux desktop app for trimming and stitching video clips. A no-nonsense Electron GUI over ffmpeg, with no re-encoding unless you ask for it.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/clipsmith",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "ISO Standards Study Hub",
+    "category": "Productivity Tools",
+    "description": "A small static web app for studying ISO standards with flashcards and multiple-choice quizzes. Decks cover information security, risk management and AI.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/ISO-flash-cards",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "VantageTerm",
+    "image": "vantageterm.jpg",
+    "category": "Developer Tools",
+    "description": "A lightweight desktop companion for Claude Code and other CLI agents: a multi-tab terminal, a file tree with git status, and side-by-side diffs for reviewing what changed.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/vantageterm",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "plimsoll",
+    "category": "Developer Tools",
+    "description": "An autonomous build loop for long unsupervised work. From one prompt it writes its own spec and checklist, then builds item by item, committing only what passes verification.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/plimsoll",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "LLM Remote Runner",
+    "image": "llm_remote_runner.jpg",
+    "category": "Developer Tools",
+    "description": "A secure web interface for running LLM and coding-agent tasks remotely, with password authentication, multiple backends and real-time streaming output.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/LLM-Remote-Runner",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "ProjectShelf",
+    "image": "projectshelf.jpg",
+    "category": "Developer Tools",
+    "description": "A local-first desktop app that indexes your projects folder for fast browsing and search, with git status and recent-activity tracking.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/ProjectShelf",
+        "label": "GitHub"
+      }
+    ]
+  },
+  {
+    "title": "webscan",
+    "category": "Developer Tools",
+    "description": "A security testing orchestrator for web apps. Wraps open-source scanners and custom checks into one CLI with 16 modules, a 150+ item checklist and unified reports.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/EdwardAThomson/web-app-scanner",
         "label": "GitHub"
       }
     ]

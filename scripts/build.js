@@ -62,7 +62,9 @@ function generateAppCardsHTML(appsData) {
   const categoryConfig = {
     'Games': { emoji: '🎮', order: 1 },
     'Writing Tools': { emoji: '✍️', order: 2 },
-    'Tech Demos': { emoji: '🔬', order: 3 }
+    'Productivity Tools': { emoji: '🗂️', order: 3 },
+    'Developer Tools': { emoji: '🛠️', order: 4 },
+    'Tech Demos': { emoji: '🔬', order: 5 }
   };
 
   // Group apps by category
@@ -98,10 +100,15 @@ function generateAppCardsHTML(appsData) {
 `;
 
     appsByCategory[category].forEach(app => {
+      // Apps without a screenshot get a placeholder showing the category emoji
+      const imageHTML = app.image
+        ? `<img src="../images/apps/${app.image}" alt="${app.title} Screenshot">`
+        : `<span class="app-image-placeholder" aria-hidden="true">${config.emoji}</span>`;
+
       html += `
 <div class="app-card">
   <div class="app-image">
-    <img src="../images/apps/${app.image}" alt="${app.title} Screenshot">
+    ${imageHTML}
   </div>
   <div class="app-content">
     <h3>${app.title}</h3>
@@ -109,7 +116,7 @@ function generateAppCardsHTML(appsData) {
     <div class="app-links">
 `;
 
-      app.links.forEach(link => {
+      (app.links || []).forEach(link => {
         const icon = iconMap[link.type] || githubIconSVG;
         html += `      <a href="${link.url}" target="_blank" rel="noopener noreferrer">
         ${icon}
