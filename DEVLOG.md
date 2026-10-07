@@ -6,6 +6,8 @@ Rewrote the AI page to present Ed as someone who builds with AI, rather than as 
 
 Following up the same day, DungeonGPT became the lead project on the AI page, with a much fuller write-up: what the game is, its "code referees, the AI narrates" design and the evaluation results behind it, the main features, and how it runs in production. The DungeonGPT.js card on the Apps page got a matching description in place of the old "uses GPT" text.
 
+Also added a Research page (`/research`, linked in the nav after AI) as a home for work that doesn't fit the Apps page: the open-source agent reviews and SWE-bench harness comparison, the DungeonGPT evaluations, the prompt injection experiments, the multi-LLM reviews (the revisited PhD thesis, Scotland's AI strategy, AI regulations) and the large-numbers mathematics project. It is framed as what Ed has tested and learned while building, so it supports the builder positioning rather than reading as governance consulting.
+
 **Decisions & notes:** Ed is moving away from leading with AI consultancy and towards "builder with AI". The About page, tagline and meta description still use the advisory framing and were left unchanged in this pass.
 
 ## 2026-07-16
