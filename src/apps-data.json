@@ -286,7 +286,7 @@
     "title": "Dragon Hoard",
     "image": "dragon_palm_arcade.jpg",
     "category": "Games",
-    "description": "My game for Dragon Palm, a fantasy 8-bit handheld console created by 0xe25f. Steer a little dragon around to gobble gems, written in self-modifying assembly for a CPU with just eleven instructions.",
+    "description": "My game for Dragon Palm, a fantasy 8-bit handheld console created by 0xe25f. Steer a little dragon around to gobble gems, written in self-modifying assembly for a CPU with just eleven instructions. Playable on my hosted version of Dragon Palm.",
     "links": [
       {
         "type": "web",
