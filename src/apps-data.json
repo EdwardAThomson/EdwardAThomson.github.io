@@ -283,10 +283,10 @@
     ]
   },
   {
-    "title": "Dragon Palm Arcade",
+    "title": "Dragon Hoard",
     "image": "dragon_palm_arcade.jpg",
     "category": "Games",
-    "description": "A browser arcade for the Dragon Palm fantasy 8-bit console. A fully static site with an emulator and a cartridge picker.",
+    "description": "My game for Dragon Palm, a fantasy 8-bit handheld console created by 0xe25f. Steer a little dragon around to gobble gems, written in self-modifying assembly for a CPU with just eleven instructions.",
     "links": [
       {
         "type": "web",
@@ -295,8 +295,13 @@
       },
       {
         "type": "github",
-        "url": "https://github.com/EdwardAThomson/dragon-palm-arcade",
+        "url": "https://github.com/EdwardAThomson/dragon-palm",
         "label": "GitHub"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/0xe25f/dragon-palm",
+        "label": "Dragon Palm"
       }
     ]
   },
