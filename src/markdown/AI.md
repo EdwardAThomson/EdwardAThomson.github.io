@@ -1,92 +1,68 @@
 ---
 title: Artificial Intelligence
-description: Ed Thomson's insights and experiences in Artificial Intelligence
+description: Ed Thomson builds software with AI, from LLM-powered games and writing tools to developer tooling and prompt injection research.
 ---
 
-AI is a fascinating area of technology. It's been developing at an incredible pace that many of us didn't expect. While many people working in tech will have known about it for many years, it wasn't really until ChatGPT came online that things really took off. The topic elicits a lot of hate and other contentious views, but amidst the hype and the hate I do think there is something real and valuable in the technology.
+I build software with AI. Most of what I make now starts as a spec I write and finishes as working code that an AI agent and I have built together, and a lot of it puts an LLM at the centre of the product itself: games with AI-driven stories, tools for writing long-form fiction, and an internal "company brain" that answers questions over a firm's data. I ship through [Octonion Software](https://octonion.io), and most of my projects are open source on [GitHub](https://github.com/EdwardAThomson). You can see the full list on my [Apps](/apps) page.
 
-I've been having a lot of fun playing with AI and taking on fun coding tasks. It isn't pure "vibe coding", but rather AI-assisted coding. Learning syntax seems redundant when I can outsource that to a machine that's superior at this task than I am.
+My background is in physics and information security (penetration testing, then governance, risk and compliance at Cisco), so I care about the parts of AI products that don't make the demo: permissions, guardrails, and what happens when someone feeds the model a malicious prompt.
 
-I believe that those who hate AI do not adequately understand the technology. Allow me to demonstrate: in June 2025, a [study](https://arxiv.org/abs/2506.08872) was making the rounds that supposedly proves: AI = "Everyone will get dumber." Almost all of the comments I've seen amount to "omg so true 100%". Hugely ironic that people complaining that "AI will make you dumber" display zero critical thought when criticizing AI.
+## How I build with AI
 
-While there is truth in the article, there is some nuance buried deep in the report on page 139 (out of 206):
+I work with AI coding agents rather than autocomplete, and the quality of the result comes down to the process around them. Sometimes I work alongside the agent step by step, and sometimes I let it run on its own for long stretches. Either way, the process is the same:
+
+*   **Plan first:** Every project starts with written documents: requirements, design notes, an implementation plan. Better plans are the single biggest factor in getting good results from an agent, so this is where I spend most of my effort.
+*   **Let the agent build:** Boilerplate, tests, refactors, unfamiliar libraries and syntax all go to the agent, and on well-planned work it can take on whole features.
+*   **Check the work:** I review what comes back against the plan, run the tests, and try the result myself.
+*   **Fix and feed back:** Anything that needs fixing gets fixed, and lessons go back into the plans and project documents so the next round goes better.
+
+I've also built tools for this way of working: [VantageTerm](https://github.com/EdwardAThomson/vantageterm), a desktop companion for Claude Code and other CLI agents with diffs for reviewing changes; [plimsoll](https://github.com/EdwardAThomson/plimsoll), an autonomous build loop that writes its own spec and checklist and only commits work that passes verification; and [LLM Remote Runner](https://github.com/EdwardAThomson/LLM-Remote-Runner), a secure web interface for running agent tasks remotely.
+
+## Things I've built
+
+### DungeonGPT
+[DungeonGPT](https://dungeongpt.xyz/) is my most mature project: a live, browser-based fantasy RPG where an AI acts as the Dungeon Master. You create a party of heroes, pick a campaign, and explore a procedurally generated world of towns, caves and ruins, talking to the DM in plain English. It has accounts, cloud saves, membership tiers and a guided tour for new players. [Watch the overview](https://youtu.be/CGskdUTQnMo) or [play it](https://dungeongpt.xyz/).
+
+The hard problem is deciding how much to trust the language model. Strong models can run a game on their own but cost too much per turn; affordable models lose track of who is where, invent characters, and complete quests early. So DungeonGPT splits the work: **code referees, the AI narrates**. The game engine holds all state and makes every decision (dice rolls, combat, loot, whether a quest objective is met), and the model turns those settled outcomes into prose. I test that split with an evaluation harness that scores models on labelled game turns, which showed small models read player intent well (95-97% for the best one) but make game decisions poorly, while a simple rule table in code got 96% on the same roll decisions in an early test.
+
+What's in it:
+
+*   **A full game loop:** a procedural world map, towns with streets and named residents, explorable sites, shops, equipment, multi-round boss fights, side quests, and campaigns that chain into new chapters in the same world.
+*   **AI that remembers:** conversation memory using on-device retrieval over the story so far, so the DM recalls earlier events.
+*   **Affordable models in production:** a curated set of open models on Cloudflare Workers AI, with a premium pool through OpenRouter for members and automatic fallback, and no API keys exposed to the browser.
+*   **Production engineering:** React on Cloudflare Pages, a TypeScript Worker backend, self-hosted PostgreSQL with per-user access enforced on the server, local-first saves that sync when you sign in, and unit and end-to-end tests.
+
+It grew from a simpler [Python version](https://github.com/EdwardAThomson/DungeonGPT), and the [JavaScript code is open source](https://github.com/EdwardAThomson/DungeonGPT-JS).
+
+### LLM Brain Demo
+[LLM Brain Demo](https://github.com/EdwardAThomson/llm-brain-demo) is a working argument that a company "LLM brain" should be a router over governed tools, not one big vector database. It's a single chat interface over a synthetic company, combining text-to-SQL with hybrid document search, with permissions enforced by Postgres rather than by the prompt.
+
+### RPG Loom
+[RPG Loom](https://rpg-loom.octonion.io/) is a deterministic incremental RPG with quests, crafting and combat, where LLMs generate the narrative content. It supports multiple LLM providers. [GitHub](https://github.com/EdwardAThomson/RPG-Loom)
+
+### Writing tools
+*   **[NovelWriter](https://github.com/EdwardAThomson/NovelWriter)** helps authors write novels with LLMs: generating lore, outlining the story, planning scenes and writing chapter prose. It began as my entry for [NaNoGenMo 2024](https://github.com/NaNoGenMo/2024/issues/31), where an early version produced a 52,000-word novel, *Echoes of Terra Nova*.
+*   **[StoryDaemon](https://github.com/EdwardAThomson/StoryDaemon)** takes the idea further: an autonomous agent that plans, writes and evolves long-form fiction on its own.
+*   **[LLM Creative Writing Analyzer](https://github.com/EdwardAThomson/LLM-Creative-Writing-Analyzer)** sends the same prompt to several models, many times over, to measure how consistent and how varied their writing is, including how often they reuse the same names.
+
+## Prompt injection research
+
+I've run a series of experiments on using an LLM as a safety classifier to catch prompt injection attacks. Two of my ideas made detection worse; the third made it better.
+
+*   **[ScrambleGate](https://github.com/EdwardAThomson/Scramble-Gate):** Inspired by ASLR in computer security, it randomly samples and scrambles parts of a prompt before an LLM classifies it. Detection dropped once inputs were scrambled.
+*   **Prompt expansion:** Making prompts more verbose, to see if that helped the classifier spot malicious intent. It made performance worse.
+*   **Adversarial system prompts:** Telling the classifier to be suspicious and alert to abuse. This improved detection.
+
+The [prompt injection testing tool](https://github.com/EdwardAThomson/prompt-injection-testing) now compares detectors side by side: LLM classifiers, regex patterns, BERT models, cheap LLM pre-filters and ScrambleGate.
+
+## On AI and thinking
+
+In June 2025 an MIT study ([Your Brain on ChatGPT](https://arxiv.org/abs/2506.08872)) was widely summarised as "AI makes you dumber". The headline missed some nuance buried on page 139 of 206:
 
 > "Brain-only writers who later added ChatGPT actually showed enhanced posterior–prefrontal coupling (Session 4)."
 
-In other words: Learning first, automation second = cognitive dividend.
+In other words, learning first and automating second pays a cognitive dividend. AI isn't brain rot; it's a mirror. If you skip the heavy lifting, it happily keeps the bar low. Do the first reps yourself, then let AI boost your thinking rather than replace it.
 
-AI isn't brain rot; it's a mirror. If you skip the heavy lifting, it happily keeps the bar low. Sweat through the first reps yourself then let AI boost, not replace, your cognition.
+## Get in touch
 
-## Guiding Principles
-My philosophy on using AI can be broken down into a few key principles:
-
-*   **1. Augment, Don't Replace:** AI should be a partner that handles the tedious work (like syntax and boilerplate), freeing up human cognition for higher-level creative and strategic thinking.
-*   **2. Critical Engagement is Non-Negotiable:** The value of AI is directly proportional to the critical thought you apply to its output. It's a tool for enhancement, not a replacement for thinking: if you skip the heavy lifting, it happily keeps the bar low.
-*   **3. Build in the Open:** The best way to understand and demystify AI is to build with it and share the results. This is why my projects are open source.
-
-## My meta workflow for working with AI
-I use AI as an active pair programmer. My primary tool is **Windsurf** (previously Cursor), which allows me to have a tight feedback loop with an AI that has full context of my codebase. Creating documents for these tools to follow is essential, e.g. create specification and implementation documents when starting or upgrading a project.
-
-Here are the meta roles I use when working with AI:
-
-*   **Delegate:** Repetitive tasks, writing boilerplate code, generating unit tests, and explaining unfamiliar libraries or codebases.
-*   **Command:** High-level architecture, creative problem-solving, and the final decision on whether to accept, reject, or modify any code suggestion. Creating documents that contain project requirements, design thinking, etc are essential.
-*   **Recognize its Limits:** AI is not a strategic thinker. It can't tell you *what* to build, but it's an unparalleled accelerator for *how* to build it once you have a clear vision.
-
-
-## My AI-powered projects
-To put my philosophy into practice, I've created several applications with AI-assistance that also use AI to perform some central task.
-
-I have a few things that I've worked on, but are not yet at a sufficient quality to publish. I also have a cryptocurrency price analysis app, but my work there is on-going.
-
-### NovelWriter
-[NovelWriter](https://github.com/edthomson/NovelWriter) is a comprehensive Python application designed to assist authors in writing novels and short stories across multiple genres by leveraging Large Language Models (LLMs). It provides a GUI-based interface built with Tkinter for managing novel parameters, generating universe lore, outlining story structure, planning scenes, and writing chapter prose. The code is fully open source and on GitHub.
-
-*[Screenshot of the NovelWriter GUI would go here]*
-
-The original version was created as part of NaNoGenMo 2024 ([completed](https://github.com/NaNoGenMo/2024/issues/31)). The first version of the code was pushed to a different repo as I lost access to my GitHub account (fixed!), please find the [original repo here](https://github.com/edthomson/NovelWriter). That code was not fully automated, but it did generate a 52,000-word novel (Echoes of Terra Nova).
-
-
-### LLM Creative Writing Tester
-A tool for testing and analyzing creative writing capabilities of various Large Language Models (LLMs). This tool allows you to test multiple LLMs with the same creative writing prompt to analyze and compare their responses.
-
-Advanced similarity analysis between responses:
-* Text-based similarity (exact matches)
-* Semantic similarity (meaning-based comparison)
-* Named entity detection and comparison
-* Name component analysis (detects when name parts like surnames appear across different texts)
-* Text structure analysis (paragraphs, sentences, and words metrics)
-
-Find on [LLM Creative Writing Tester GitHub](https://github.com/EdwardAThomson/LLM-Creative-Writing-Analyzer).
-
-
-### DungeonGPT
-[DungeonGPT](https://github.com/EdwardAThomson/DungeonGPT) is an interactive, AI-powered Dungeon Master tool designed to guide players through customized adventures in a tabletop role-playing game. The application features dynamic character creation, party selection, game settings customization, and conversational gameplay, all powered by GPT4o.
-
-The code is fully open sourced and on GitHub. The code is written in Python, although I also wrote a version of the app in JS: [DungeonGPT-JS](https://github.com/EdwardAThomson/DungeonGPT-JS). This latter version has a little bit more functionality as I added a simple map.
-
-
-### Prompt Injection Research
-I worked on a couple of research that explored prompt injection attacks on LLMs. I was primarily interested in how to use an LLM as a safey classifier for defending against prompt injection attacks. My first two ideas made performance; however, asking the LLM to be suspicious of prompts improved performance.
-
-**ScrambleGate**
-The intention was a stochastic pre-execution gate: before a prompt is sent to the main model, ScrambleGate randomly samples and scrambles parts of the input, then sends them to an LLM for safety classification.
-[ScrambleGate on GitHub](https://github.com/EdwardAThomson/Scramble-Gate).
-
-The idea was inspired by ASLR (Address Space Layout Randomization) in computer security: scrambling the input before "execution".
-
-However, this was not a successful idea for defending against prompt injection attacks. The detection rate decreases upon being scrambled. Note that the system prompt in this code did not ask the LLM to be suspicious.
-
-**Prompt Expansion**
-A simple tool that analyzes how prompt expansion and adversarial system prompts affect safety classification by LLMs. The initial idea was to make prompts more verbose and see if this helped an LLM spot malicious intent; however, this made performance worse.
-
-**Adversarial System Prompts**
-That lead me to try asking the LLM to be more suspicious: this involved adding a system prompt to the LLM that instructed it to be more suspicious and alert to potential abuse.
-
-[Code on GitHub](https://github.com/EdwardAThomson/prompt-injection-testing)
-
-
-## What's Next?
-My journey with AI is ongoing. I'm currently exploring the potential of LLMs for creative writing, gaming, price analysis and so on. My goal is to continue pushing the boundaries of what's possible when human creativity is augmented by machine intelligence.
-
-
+If you'd like something built with AI, or want to talk through an idea, the best way to reach me is [LinkedIn](https://www.linkedin.com/in/edward-thomson-phd-msc-080ba519/).
