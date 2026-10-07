@@ -214,9 +214,16 @@
   },
   {
     "title": "Voxelholm",
-    "category": "Games",
     "description": "A from-scratch C++/OpenGL voxel engine and game. Mine, build and explore a procedurally generated world with biomes, caves, crafting, villages and a day/night cycle, heading towards a sandbox RPG. Work in progress.",
-    "links": []
+    "image": "voxelholm.jpg",
+    "category": "Games",
+    "links": [
+      {
+        "type": "youtube",
+        "url": "https://youtu.be/2NsJczaEJ4k",
+        "label": "YouTube"
+      }
+    ]
   },
   {
     "title": "Xaya Roguelike",
