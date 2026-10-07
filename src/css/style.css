@@ -28,7 +28,7 @@
   /* Sizing */
   --container-width: 1200px;
   --header-height: 80px;
-  --content-width: 950px;
+  --content-width: 1150px;
   
   /* Spacing */
   --spacing-1: 0.25rem;
@@ -383,7 +383,7 @@ blockquote {
 .toc-container {
   position: sticky;
   top: calc(var(--header-height) + var(--spacing-8));
-  width: 240px;
+  flex: 0 0 260px;
   margin-right: var(--spacing-8);
   font-size: 0.875rem;
   max-height: calc(100vh - var(--header-height) - var(--spacing-16));
