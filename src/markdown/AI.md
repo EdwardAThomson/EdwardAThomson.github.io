@@ -9,12 +9,12 @@ My background is in physics and information security (penetration testing, then 
 
 ## How I build with AI
 
-I work with AI coding agents rather than autocomplete. The agent writes most of the code; my job is deciding what to build, writing it down clearly, and checking what comes back.
+I work with AI coding agents rather than autocomplete, and the quality of the result comes down to the process around them. Sometimes I work alongside the agent step by step, and sometimes I let it run on its own for long stretches. Either way, the process is the same:
 
-*   **Spec first:** Every project starts with written documents: requirements, design notes, an implementation plan. Clear documents are the single biggest factor in getting good results from an agent.
-*   **Delegate the mechanics:** Boilerplate, tests, refactors, unfamiliar libraries and syntax all go to the agent.
-*   **Own the decisions:** Architecture, trade-offs, and whether to accept, reject or rework a change stay with me. AI is an accelerator for *how* to build something; it shouldn't be the one deciding *what* to build.
-*   **Verify everything:** The value of AI output is proportional to the scrutiny you give it. Nothing gets committed because it looks right.
+*   **Plan first:** Every project starts with written documents: requirements, design notes, an implementation plan. Better plans are the single biggest factor in getting good results from an agent, so this is where I spend most of my effort.
+*   **Let the agent build:** Boilerplate, tests, refactors, unfamiliar libraries and syntax all go to the agent, and on well-planned work it can take on whole features.
+*   **Check the work:** I review what comes back against the plan, run the tests, and try the result myself.
+*   **Fix and feed back:** Anything that needs fixing gets fixed, and lessons go back into the plans and project documents so the next round goes better.
 
 I've also built tools for this way of working: [VantageTerm](https://github.com/EdwardAThomson/vantageterm), a desktop companion for Claude Code and other CLI agents with diffs for reviewing changes; [plimsoll](https://github.com/EdwardAThomson/plimsoll), an autonomous build loop that writes its own spec and checklist and only commits work that passes verification; and [LLM Remote Runner](https://github.com/EdwardAThomson/LLM-Remote-Runner), a secure web interface for running agent tasks remotely.
 
