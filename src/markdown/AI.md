@@ -20,14 +20,25 @@ I've also built tools for this way of working: [VantageTerm](https://github.com/
 
 ## Things I've built
 
+### DungeonGPT
+[DungeonGPT](https://dungeongpt.xyz/) is my most mature project: a live, browser-based fantasy RPG where an AI acts as the Dungeon Master. You create a party of heroes, pick a campaign, and explore a procedurally generated world of towns, caves and ruins, talking to the DM in plain English. It has accounts, cloud saves, membership tiers and a guided tour for new players. [Watch the overview](https://youtu.be/CGskdUTQnMo) or [play it](https://dungeongpt.xyz/).
+
+The hard problem is deciding how much to trust the language model. Strong models can run a game on their own but cost too much per turn; affordable models lose track of who is where, invent characters, and complete quests early. So DungeonGPT splits the work: **code referees, the AI narrates**. The game engine holds all state and makes every decision (dice rolls, combat, loot, whether a quest objective is met), and the model turns those settled outcomes into prose. I test that split with an evaluation harness that scores models on labelled game turns, which showed small models read player intent well (95-97% for the best one) but make game decisions poorly, while a simple rule table in code got 96% on the same roll decisions in an early test.
+
+What's in it:
+
+*   **A full game loop:** a procedural world map, towns with streets and named residents, explorable sites, shops, equipment, multi-round boss fights, side quests, and campaigns that chain into new chapters in the same world.
+*   **AI that remembers:** conversation memory using on-device retrieval over the story so far, so the DM recalls earlier events.
+*   **Affordable models in production:** a curated set of open models on Cloudflare Workers AI, with a premium pool through OpenRouter for members and automatic fallback, and no API keys exposed to the browser.
+*   **Production engineering:** React on Cloudflare Pages, a TypeScript Worker backend, self-hosted PostgreSQL with per-user access enforced on the server, local-first saves that sync when you sign in, and unit and end-to-end tests.
+
+It grew from a simpler [Python version](https://github.com/EdwardAThomson/DungeonGPT), and the [JavaScript code is open source](https://github.com/EdwardAThomson/DungeonGPT-JS).
+
 ### LLM Brain Demo
 [LLM Brain Demo](https://github.com/EdwardAThomson/llm-brain-demo) is a working argument that a company "LLM brain" should be a router over governed tools, not one big vector database. It's a single chat interface over a synthetic company, combining text-to-SQL with hybrid document search, with permissions enforced by Postgres rather than by the prompt.
 
 ### RPG Loom
 [RPG Loom](https://rpg-loom.octonion.io/) is a deterministic incremental RPG with quests, crafting and combat, where LLMs generate the narrative content. It supports multiple LLM providers. [GitHub](https://github.com/EdwardAThomson/RPG-Loom)
-
-### DungeonGPT
-[DungeonGPT](https://dungeongpt.xyz/) is an AI Dungeon Master for tabletop-style adventures, with character creation, party selection and conversational gameplay. It started as a [Python app](https://github.com/EdwardAThomson/DungeonGPT); the [JavaScript version](https://github.com/EdwardAThomson/DungeonGPT-JS) adds a map and is the one you can play.
 
 ### Writing tools
 *   **[NovelWriter](https://github.com/EdwardAThomson/NovelWriter)** helps authors write novels with LLMs: generating lore, outlining the story, planning scenes and writing chapter prose. It began as my entry for [NaNoGenMo 2024](https://github.com/NaNoGenMo/2024/issues/31), where an early version produced a 52,000-word novel, *Echoes of Terra Nova*.
